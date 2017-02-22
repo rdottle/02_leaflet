@@ -1,8 +1,9 @@
 <html>
 <head>
   <title>Project Urbano - Test </title>
- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
- <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<link rel = "stylesheet" href = "../css/site-specific.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
   <style>
     #map{ height: 100% }
   </style>
@@ -14,12 +15,12 @@
   <script>
 
   // initialize the map
-  var map = L.map('map').setView([42.35, -71.08], 13);
+  var map = L.map('map').setView([41.8167154,-71.4877747], 13);
 
   // load a tile layer
-  L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+  L.tileLayer('https://api.mapbox.com/styles/v1/rcd2127/cizha40gr00002so4tnjkof5d/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmNkMjEyNyIsImEiOiJjaWgxN2FjcmcweG5jeDFtMGFmODU3YmJ5In0.AI6i-32E9xx-yfp3eFLSQA',
     {
-      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+      attribution: 'Tiles by <a href="http://rachaeldottle.com">Rachael D.</a>, Data by <a href="http://mapbox.com">Mapbox</a>',
       maxZoom: 17,
       minZoom: 9
     }).addTo(map);
